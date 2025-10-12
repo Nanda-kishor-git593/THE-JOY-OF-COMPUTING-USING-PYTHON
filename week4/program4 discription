@@ -1,0 +1,27 @@
+## movie_guessing_game.py
+
+**Description:**  
+A two-player movie guessing game inspired by Hangman.  
+- The program picks a random movie name from a predefined list.
+- Each player, on their turn, guesses letters to try to reveal the hidden movie title.
+- Players can choose to guess the full movie name after revealing letters.
+- Scores are tracked, and players can play multiple rounds, quitting when they wish.
+
+**Code Structure:**
+- The movie list is defined at the start of the script.
+- The function `create_question(movie)` hides all letters in the movie name with asterisks (`*`), leaving spaces visible.
+- The function `is_present(letter, movie)` checks whether the guessed letter exists in the movie name.
+- The function `unlock(qn, movie, letter)` reveals all occurrences of the guessed letter in the hidden movie name.
+- The function `play()` runs the game and:
+    1. Takes player names
+    2. Alternates turns, selects a movie each turn, and manages input/logic for revealing letters, guessing, and scoring
+    3. Lets players continue for as many rounds as they like, tracking and displaying scores
+
+**Usage:**
+- Run the script with Python 3.x.
+- Enter player names when prompted.
+- Follow the prompts to guess letters or solve the movie name.
+- The game continues until you choose to quit, at which point the scores are displayed.
+
+**Author:** nanda kishor reddy
+**Date:** 12/10/2025
